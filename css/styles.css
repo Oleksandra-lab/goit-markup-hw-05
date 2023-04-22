@@ -100,7 +100,7 @@ p {
     letter-spacing: 0.02em;
     color: var(--navy-blue) ;
 
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: color var(--animation-fast);
 }
 
 .nav-list {
@@ -117,7 +117,7 @@ p {
 .header_nav_link.current::after {
     content: '' ;
     position: absolute;
-    bottom: 20px;
+    bottom: 1px;
     left: 0;
     display: block;
     width: 100%;
@@ -135,7 +135,7 @@ p {
     letter-spacing: 0.02em;
     color: var(--slate);
 
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: color var(--animation-fast);
 }
 .add-list {
     display: flex;
@@ -321,6 +321,8 @@ p {
 
         background-color: var(--iris);
         border-radius: 50%;
+
+        transition: background-color var(--animation-fast);
     }
     .social-network-link:hover,
     .social-network-link:focus {
@@ -362,7 +364,10 @@ p {
         justify-content: center;
         border: 1px solid var(--light-slate);
         border-radius: 4px ; 
-        color: var(--light-slate); 
+        color: var(--light-slate);
+        
+        transition: border-color var(--animation-fast),
+        color var(--animation-fast);
     
     }
     .customers-section-item :hover,
@@ -399,6 +404,9 @@ p {
         background-color:  var(--cloud);
         color: var(--iris);
         cursor: pointer;
+
+        transition: color var(--animation-fast),
+        box-shadow var(--animation-fast) ;
     }
 
     .production_type_section_btn:hover,
@@ -423,6 +431,8 @@ p {
     }
     .production_examples_section_link {
         display: block;
+
+        transition: box-shadow var(--animation-fast);
     }
     .production_examples_section_link:hover,
     .production_examples_section_link:focus {
@@ -451,7 +461,8 @@ p {
 
 
     }
-    .production_examples_section_item:hover .overlay {
+    .production_examples_section_item:hover .overlay,
+    .production_examples_section_item:focus .overlay {
         transform: translateY(0);
     }
     .overlay-label {
@@ -535,6 +546,8 @@ p {
 
         background-color: var(--iris);
         border-radius: 50%;
+
+        transition: background-color var(--animation-fast);
     }
     .footer-social-network-item :hover,
     .footer-social-network-item :focus {
