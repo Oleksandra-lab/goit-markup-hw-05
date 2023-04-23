@@ -464,10 +464,9 @@ p {
 
 
     }
+     
+    .production_examples_section_item:hover .overlay,
     .production_examples_section_item:focus .overlay {
-        transform: translateY(0) ;
-    }
-    .production_examples_section_item:hover .overlay {
         transform: translateY(0);
     }
     .overlay-label {
