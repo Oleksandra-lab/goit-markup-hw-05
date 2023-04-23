@@ -465,11 +465,14 @@ p {
 
     }
      
-    .production_examples_section_item:hover .overlay,
-    .production_examples_section_item:focus .overlay {
+    .production_examples_section_link:hover .overlay,
+    .production_examples_section_link:focus .overlay {
         transform: translateY(0);
     }
     .overlay-label {
+        font-size: 16px;
+        line-height: 1,5;
+        letter-spacing: 0,02em;
         color: #FCFCFC;
         text-align: center;
        
@@ -505,7 +508,9 @@ p {
     .footer-content-container {
         display: flex;
         align-items: baseline;
-        gap: 120px;      
+    }
+    .footer-content {
+        margin-right: 120px;
     }
     .footer-logo {
         display: inline-block;
@@ -581,7 +586,7 @@ p {
         visibility: visible;
         pointer-events: initial;
 
-        transition: opacity 200ms ease, visibiliyy 200ms ease;
+        transition: opacity var(--animation-fast), visibility var(--animation-fast);
     }
     .backdrop.is-hidden {
         opacity: 0;
